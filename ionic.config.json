@@ -1,0 +1,7 @@
+{
+  "name": "countiesInfo",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
