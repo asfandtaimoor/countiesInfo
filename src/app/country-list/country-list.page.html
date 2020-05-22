@@ -1,0 +1,21 @@
+<ion-header>
+    <ion-toolbar>
+        <ion-title>country-list</ion-title>
+    </ion-toolbar>
+</ion-header>
+
+
+<ion-content>
+    <div *ngFor="let item of countries">
+        <ion-button expand="block" fill="solid" size="large" color="danger">
+            <div class="photo">
+                <img src="https://images.unsplash.com/photo-1589994206743-2ce144b54a0e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1189&q=80 " alt="Girl in the jungle ">
+            </div>
+            <div class="text ion-text-start">
+                <h5>Country : {{item.country}}</h5>
+                <h5>Capital :{{item.city}}</h5>
+            </div>
+        </ion-button>
+
+    </div>
+</ion-content>

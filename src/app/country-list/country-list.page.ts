@@ -1,29 +1,27 @@
-import { Component } from '@angular/core';
-
-import { Platform } from '@ionic/angular';
-import { SplashScreen } from '@ionic-native/splash-screen/ngx';
-import { StatusBar } from '@ionic-native/status-bar/ngx';
+import { Component, OnInit } from '@angular/core';
 
 @Component({
-  selector: 'app-root',
-  templateUrl: 'app.component.html',
-  styleUrls: ['app.component.scss']
+  selector: 'app-country-list',
+  templateUrl: './country-list.page.html',
+  styleUrls: ['./country-list.page.scss'],
 })
-export class AppComponent {
-  constructor(
-    private platform: Platform,
-    private splashScreen: SplashScreen,
-    private statusBar: StatusBar
-  ) {
-    this.initializeApp();
+export class CountryListPage implements OnInit {
+
+  constructor() { }
+
+  ngOnInit() {
   }
 
-  initializeApp() {
-    this.platform.ready().then(() => {
-      this.statusBar.styleDefault();
-      this.splashScreen.hide();
-    });
-  }
+  departments =[
+    {'id':1 , 'name':'Angular'},
+    {'id':2 , 'name':'Bootstrap'},
+    {'id':3 , 'name':'Vue'},
+    {'id':4 , 'name':'React'},
+    {'id':5 , 'name':'AntDesign'},
+    {'id':6 , 'name':'Ionic'}
+
+  ]
+  
 
   countries = [
     {
@@ -1003,4 +1001,5 @@ export class AppComponent {
         "city": "Harare"
     }
 ]
+
 }

@@ -1,0 +1,24 @@
+// First box  width && second box left area
+$box-Width: 100px;
+ion-content {
+    ion-button {
+        position: relative;
+        height: 90px;
+        .photo {
+            position: absolute;
+            left: 0;
+            img {
+                width: $box-Width;
+            }
+        }
+        .text {
+            padding: 5px 15px;
+            position: absolute;
+            left: $box-Width;
+            h5 {
+                font-size: 12px;
+                border-radius: 0;
+            }
+        }
+    }
+}
