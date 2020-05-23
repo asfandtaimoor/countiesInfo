@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
+import { CountriesService } from '../countries.service';
 
 
 @Component({
@@ -9,7 +10,8 @@ import { Router } from '@angular/router';
 })
 export class CountryListPage implements OnInit {
 
-  constructor(private router:Router) { }
+  public countries =[];
+  constructor(private router:Router,private _countriesService:CountriesService) { }
 
     // Pass the id
 
@@ -21,18 +23,9 @@ export class CountryListPage implements OnInit {
 
 
   ngOnInit() {
+    this.countries = this._countriesService.getCountries();
   }
 
-  countries =[
-    {'id':1 , 'city':'Angular' , 'detail':'Presented by google' },
-    {'id':2 , 'city':'Bootstrap', 'detail':'Very famous css framework'},
-    {'id':3 , 'city':'Vue', 'detail':'Light weight js framework'},
-    {'id':4 , 'city':'React', 'detail': 'Framework by facebook'},
-    {'id':5 , 'city':'AntDesign', 'detail':'Design for the developer'},
-    {'id':6 , 'city':'Ionic', 'detail':'Make apps for the multi platform application'}
-
-  ]
-  
 
 
 }
