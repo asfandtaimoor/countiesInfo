@@ -1,0 +1,17 @@
+$imgHeight: 250px;
+$imgWidth:250px;
+$headerPadding: 20px;
+$headerHeight:$imgHeight+2*($headerPadding);
+ion-header {
+    position: relative;
+    padding: $headerPadding;
+    background-color: red;
+    height: $headerHeight;
+    img {
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 300px;
+        height: $imgHeight;
+    }
+}
