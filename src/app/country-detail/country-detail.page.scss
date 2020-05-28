@@ -2,6 +2,8 @@ $imgHeight: 250px;
 $imgWidth:250px;
 $headerPadding: 20px;
 $headerHeight:$imgHeight+2*($headerPadding);
+// Color
+$primaryColor:red;
 ion-header {
     position: relative;
     padding: $headerPadding;
@@ -13,5 +15,22 @@ ion-header {
         transform: translateX(-50%);
         width: 300px;
         height: $imgHeight;
+    }
+}
+
+ion-content {
+    ion-item {
+        ion-item {
+            // icon of the item
+            .i-icon {
+                height: 100%;
+            }
+            // text of the item
+            .text-box {
+                h4 {
+                    margin: 0;
+                }
+            }
+        }
     }
 }

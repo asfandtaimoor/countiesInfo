@@ -3,7 +3,7 @@ $box-Width: 100px;
 ion-content {
     div {
         background-color: red;
-        margin: 10px;
+        margin: 5px;
         position: relative;
         height: 90px;
         overflow: hidden;
@@ -21,6 +21,10 @@ ion-content {
             h5 {
                 font-size: 12px;
                 border-radius: 0;
+                margin: 0;
+                font-weight: bold;
+                margin: 5px;
+                color: white;
             }
         }
     }

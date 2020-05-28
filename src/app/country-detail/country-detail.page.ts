@@ -16,7 +16,7 @@ export class CountryDetailPage implements OnInit {
   ngOnInit() {
     this.countries = this._countriesService.getCountries();
     let id = parseInt(this.route.snapshot.paramMap.get('id'));
-    this.countryId = id;
+    this.countryId = id -1;
   }
 
 

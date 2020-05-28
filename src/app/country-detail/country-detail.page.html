@@ -1,9 +1,123 @@
 <ion-header>
     <img src="https://images.unsplash.com/photo-1589994206743-2ce144b54a0e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1189&q=80 " alt="Girl in the jungle ">
 </ion-header>
-
-
-
+<div>
+    <h1>Hello {{countries[countryId].country}}</h1>
+</div>
 <ion-content>
-    <h2>Your selected id is equal to {{countryId}}</h2>
+
+    <ion-list>
+        <!-- Item of the list-->
+        <ion-item>
+            <ion-item>
+                <ion-icon name="business-outline"></ion-icon>
+            </ion-item>
+            <ion-item>
+                <!-- item text Area-->
+                <div class="text-box">
+                    <h4>{{countries[countryId].country}}</h4>
+                    <h4>Capital</h4>
+                </div>
+            </ion-item>
+        </ion-item>
+
+        <!-- Item of the list-->
+        <ion-item>
+            <ion-item>
+                <ion-icon name="cash-outline"></ion-icon>
+            </ion-item>
+            <ion-item>
+                <!-- item text Area-->
+                <div class="text-box">
+                    <h4>{{countries[countryId].country}}</h4>
+                    <h4>Currency</h4>
+                </div>
+            </ion-item>
+        </ion-item>
+
+        <!-- Item of the list-->
+        <ion-item>
+            <ion-item>
+                <ion-icon name="earth-outline"></ion-icon>
+            </ion-item>
+            <ion-item>
+                <!-- item text Area-->
+                <div class="text-box">
+                    <h4>{{countries[countryId].country}}</h4>
+                    <h4>Continent</h4>
+                </div>
+            </ion-item>
+        </ion-item>
+
+        <!-- Item of the list-->
+        <ion-item>
+            <ion-item>
+                <ion-icon name="locate-outline"></ion-icon>
+            </ion-item>
+            <ion-item>
+                <!-- item text Area-->
+                <div class="text-box">
+                    <h4>{{countries[countryId].country}}</h4>
+                    <h4>Area</h4>
+                </div>
+            </ion-item>
+        </ion-item>
+
+        <!-- Item of the list-->
+        <ion-item>
+            <ion-item>
+                <ion-icon name="people-outline"></ion-icon>
+            </ion-item>
+            <ion-item>
+                <!-- item text Area-->
+                <div class="text-box">
+                    <h4>{{countries[countryId].country}}</h4>
+                    <h4>Population</h4>
+                </div>
+            </ion-item>
+        </ion-item>
+
+        <!-- Item of the list-->
+        <ion-item>
+            <ion-item>
+                <ion-icon name="baseball-outline"></ion-icon>
+            </ion-item>
+            <ion-item>
+                <!-- item text Area-->
+                <div class="text-box">
+                    <h4>{{countries[countryId].country}}</h4>
+                    <h4>Density</h4>
+                </div>
+            </ion-item>
+        </ion-item>
+
+        <!-- Item of the list-->
+        <ion-item>
+            <ion-item>
+                <ion-icon name="call-outline"></ion-icon>
+            </ion-item>
+            <ion-item>
+                <!-- item text Area-->
+                <div class="text-box">
+                    <h4>{{countries[countryId].country}}</h4>
+                    <h4>Calling Code</h4>
+                </div>
+            </ion-item>
+        </ion-item>
+
+        <!-- Item of the list-->
+        <ion-item>
+            <ion-item>
+                <ion-icon name="globe-outline"></ion-icon>
+            </ion-item>
+            <ion-item>
+                <!-- item text Area-->
+                <div class="text-box">
+                    <h4>{{countries[countryId].country}}</h4>
+                    <h4>Internet Domain</h4>
+                </div>
+            </ion-item>
+        </ion-item>
+
+    </ion-list>
 </ion-content>
